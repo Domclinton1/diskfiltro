@@ -552,7 +552,7 @@ header .btn-contato:hover {
     .filtro-bg img {
         max-width: 250px;
     }
-    .img-container:nth-child(1) {
+    .filtro-bg2 {
         display: none;
     }
     .about .row {
