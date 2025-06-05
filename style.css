@@ -552,6 +552,9 @@ header .btn-contato:hover {
     .filtro-bg img {
         max-width: 250px;
     }
+    .img-container:nth-child(1) {
+        display: none;
+    }
     .about .row {
         display: flex;
         flex-direction: column-reverse;
