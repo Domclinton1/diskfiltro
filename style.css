@@ -520,7 +520,7 @@ header .btn-contato:hover {
    
     .home-container {
         margin-top: 100px;
-        height: 100%;
+        height: 70vh;
     }
     .home-container h3 {
         font-size: 30px;
