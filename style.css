@@ -212,14 +212,22 @@ header .btn-contato:hover {
 .btn:hover {
     letter-spacing: 0.5rem;
 }
-
+.home-container h3 {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+.home-container p {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    
+}
 .home-container {
     position: relative;
     background: url("./assets/images/bg-hero.png");
-    height: 100vh;
+    background-attachment: fixed;
+    height: 100%;
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    flex: 1;
 }
 
 .home-container::before {
@@ -244,6 +252,17 @@ header .btn-contato:hover {
     display: flex;
     align-items: center;
     min-height: 100vh;
+}
+.img-container {
+    flex: 1;
+    width: 100%;
+    z-index: 1;
+    
+}
+.img-container img {
+    width: 100%;
+    margin-top: 30px;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
 }
 
 .content {
@@ -470,7 +489,9 @@ header .btn-contato:hover {
     background-color: var(--main-color);
 }
 
-
+.filtro-bg {
+    display: none;
+}
 
 
 @media screen and (max-width: 1020px) {
@@ -487,7 +508,7 @@ header .btn-contato:hover {
     justify-content: center;
    }
    .btn-abrir-menu{
-        display: block;
+        display: none;
     }
    .flex {
     flex-direction: column-reverse;
@@ -499,16 +520,16 @@ header .btn-contato:hover {
    
     .home-container {
         margin-top: 100px;
-        height: 80vh;
+        height: 100vh;
     }
     .home-container h3 {
-        font-size: 38px;
+        font-size: 30px;
         width: 100%;
         
         text-align: center;
     }
     .home-container p {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
     }
     .home-container .content {
@@ -521,7 +542,16 @@ header .btn-contato:hover {
         justify-content: center;
         margin: 0 auto;
     }
-    
+    .filtro-bg {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .filtro-bg img {
+        max-width: 250px;
+    }
     .about .row {
         display: flex;
         flex-direction: column-reverse;
